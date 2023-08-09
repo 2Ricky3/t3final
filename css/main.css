@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@300&display=swap");
+/*------*/
+/*Fonts*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #182434;
+}
+
+/*Carousel Home Page */
+.carousel-control-prev,
+.carousel-control-next {
+    bottom: 20px;
+    width: 30px;
+}
+
+.carousel {
+    width: 25%;
+    margin-top: 17.5%;
+    margin-left: 5%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner {
+    transition: transform 0.5s ease;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 110%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10%;
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    height: 50%;
+    margin-top: 25%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+
+.carousel-control {
+    width: 25px;
+    margin: 0 auto;
+}
+
+/* Accordion */
+
+#accordionFlushExample {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.accordion-header {
+    background-color: #2c3d52;
+
+}
+
+
+.accordion-button {
+    color: #182434;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accordion-body {
+    background-color: #2c3d52;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0 0 10px 10px;
+}
+
+.accordion-body p {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.weather-widget h1 {
+    color: #182434;
+}
+
+.weather-widget {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #182434;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #182434;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.conditions {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn {
+    background-color: #2c3d52;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: #182434;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    color: black;
+
+}
