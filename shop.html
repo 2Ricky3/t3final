@@ -12,15 +12,94 @@
     />
     <link href="/css/main.css" rel="stylesheet" />
   </head>
+  <a class="navbar-brand" href="#">
+    <img
+      src="/Assets/shopbarclaybutera-removebg-preview.png"
+      alt="Logo"
+      height="150"
+    />
+    <h2>Arctic Odyssey</h2>
+  </a>
   <body>
+    <div class="row">
+      <!---Filter Radio Buttons-->
+      <div class="btn-group col-auto" role="group">
+        <input
+          type="radio"
+          class="btn-check"
+          name="filterRadio"
+          id="allTripsFilter"
+          value=""
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-outline-success" for="allPlantsFilter"
+          >All Trips</label
+        >
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="priceRadio"
+          id="lowPriceFilter"
+          value="low"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-success" for="lowPriceFilter"
+          >Low Price</label
+        >
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="priceRadio"
+          id="highPriceFilter"
+          value="high"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-success" for="highPriceFilter"
+          >High Price</label
+        >
+      </div>
+      <div class="btn-group col-auto" role="group">
+        <input
+          type="radio"
+          class="btn-check"
+          name="sortRadio"
+          id="defaultSort"
+          value="date added"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-outline-secondary" for="defaultSort"
+          ><i class="bi bi-calender4"></i>Newest to Oldest</label
+        >
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="sortRadio"
+          id="priceSort"
+          value="low to high"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-secondary" for="priceSort"
+          ><i class="bi bi-sort-down-alt"></i>Price: Low to High</label
+        >
+      </div>
+    </div>
+
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-4">
+        <!-- First Card -->
+        <div class="col-md-6" data-price="500">
           <div class="card">
             <img
               src="/Assets/A luxury cruise ship sets sail for the Arctic, thanks to climate change.jpeg"
               class="card-img-top"
               alt="..."
+              style="height: 300px"
+              style="width: 200px"
             />
             <div class="card-body">
               <h5 class="card-title">9-18 September Cruise</h5>
@@ -29,16 +108,16 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-4">
+
+        <!-- Second Card -->
+        <div class="col-md-6" data-price="800">
           <div class="card">
             <img
               src="/Assets/What to Know Before Cruising the Canadian Arctic.jpeg"
               class="card-img-top"
               alt="..."
+              style="height: 300px"
+              style="width: 200px"
             />
             <div class="card-body">
               <h5 class="card-title">8-29 December</h5>
