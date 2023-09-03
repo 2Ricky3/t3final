@@ -12,31 +12,48 @@
     />
     <link href="/css/main.css" rel="stylesheet" />
   </head>
-  <a class="navbar-brand" href="#">
-    <img
-      src="/Assets/shopbarclaybutera-removebg-preview.png"
-      alt="Logo"
-      height="150"
-    />
-    <h2>Arctic Odyssey</h2>
-  </a>
   <body>
+    <div class="btn-group btn-top-right">
+      <a
+        href="/checkout.html"
+        class="btn btn-primary"
+        style="text-decoration: none"
+        >Checkout</a
+      >
+      <a href="/" class="btn btn-secondary">Home Page</a>
+    </div>
+    <a class="navbar-brand logo-container" href="#">
+      <img
+        src="/Assets/shopbarclaybutera-removebg-preview.png"
+        alt="Logo"
+        height="150"
+        class="logo"
+      />
+      <img
+        src="/Assets/Stock_Image__Objects-removebg-preview.png"
+        alt="Hover Logo"
+        height="150"
+        class="logo-hover"
+      />
+    </a>
+
     <div class="row">
-      <!---Filter Radio Buttons-->
+      <!-- Filter Radio Buttons -->
       <div class="btn-group col-auto" role="group">
         <input
           type="radio"
           class="btn-check"
           name="filterRadio"
-          id="allTripsFilter"
-          value=""
+          id="shortFilter"
+          value="short"
           autocomplete="off"
-          checked
         />
-        <label class="btn btn-outline-success" for="allPlantsFilter"
-          >All Trips</label
+        <label
+          class="btn btn-outline-secondary"
+          for="shortFilter"
+          style="color: white"
+          >Short Trips</label
         >
-
         <input
           type="radio"
           class="btn-check"
@@ -45,10 +62,12 @@
           value="low"
           autocomplete="off"
         />
-        <label class="btn btn-outline-success" for="lowPriceFilter"
+        <label
+          class="btn btn-outline-secondary"
+          for="lowPriceFilter"
+          style="color: white"
           >Low Price</label
         >
-
         <input
           type="radio"
           class="btn-check"
@@ -57,42 +76,23 @@
           value="high"
           autocomplete="off"
         />
-        <label class="btn btn-outline-success" for="highPriceFilter"
+        <label
+          class="btn btn-outline-secondary"
+          for="highPriceFilter"
+          style="color: white"
           >High Price</label
         >
       </div>
-      <div class="btn-group col-auto" role="group">
-        <input
-          type="radio"
-          class="btn-check"
-          name="sortRadio"
-          id="defaultSort"
-          value="date added"
-          autocomplete="off"
-          checked
-        />
-        <label class="btn btn-outline-secondary" for="defaultSort"
-          ><i class="bi bi-calender4"></i>Newest to Oldest</label
-        >
-
-        <input
-          type="radio"
-          class="btn-check"
-          name="sortRadio"
-          id="priceSort"
-          value="low to high"
-          autocomplete="off"
-        />
-        <label class="btn btn-outline-secondary" for="priceSort"
-          ><i class="bi bi-sort-down-alt"></i>Price: Low to High</label
-        >
-      </div>
     </div>
-
     <div class="container mt-5">
       <div class="row">
         <!-- First Card -->
-        <div class="col-md-6" data-price="500">
+        <div
+          class="col-md-3"
+          data-title="9-18 September Cruise"
+          data-description="A cheap and quick arctic cruise"
+          data-price="600"
+        >
           <div class="card">
             <img
               src="/Assets/A luxury cruise ship sets sail for the Arctic, thanks to climate change.jpeg"
@@ -102,32 +102,104 @@
               style="width: 200px"
             />
             <div class="card-body">
-              <h5 class="card-title">9-18 September Cruise</h5>
+              <h5 class="card-title">9-18 December Cruise</h5>
               <p class="card-text">A cheap and quick arctic cruise</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a
+                class="btn btn-primary add-trip-btn"
+                data-title="9-18 September Cruise"
+                data-description="A cheap and quick arctic cruise"
+                data-price="600"
+                >Add Trip</a
+              >
             </div>
           </div>
         </div>
 
         <!-- Second Card -->
-        <div class="col-md-6" data-price="800">
+        <div
+          class="col-md-3"
+          data-title="9-18 September Cruise"
+          data-description="A cheap and quick arctic cruise"
+          data-price="600"
+        >
           <div class="card">
             <img
-              src="/Assets/What to Know Before Cruising the Canadian Arctic.jpeg"
+              src="/Assets/On an Arctic expedition cruise, expect the spectacularly unexpected — The Globe and Mail.jpeg"
               class="card-img-top"
               alt="..."
               style="height: 300px"
               style="width: 200px"
             />
             <div class="card-body">
-              <h5 class="card-title">8-29 December</h5>
+              <h5 class="card-title">2 January-20 January</h5>
               <p class="card-text">A fun month cruise.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a
+                class="btn btn-primary add-trip-btn"
+                data-title="9-18 September Cruise"
+                data-description="A fun month cruise."
+                data-price="600"
+                >Add Trip</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-3"
+          data-title="9-18 September Cruise"
+          data-description="A cheap and quick arctic cruise"
+          data-price="600"
+        >
+          <div class="card">
+            <img
+              src="/Assets/Paddling in the Polar Regions.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 300px"
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">6 July- 26 July</h5>
+              <p class="card-text">A cheap and quick arctic cruise</p>
+              <a
+                class="btn btn-primary add-trip-btn"
+                data-title="9-18 September Cruise"
+                data-description="A cheap and quick arctic cruise"
+                data-price="600"
+                >Add Trip</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-3"
+          data-title="9-18 September Cruise"
+          data-description="A cheap and quick arctic cruise"
+          data-price="600"
+        >
+          <div class="card">
+            <img
+              src="/Assets/The Best Arctic Cruises in the World.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 300px"
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">1 November- 30 November</h5>
+              <p class="card-text">A fun month cruise.</p>
+              <a
+                class="btn btn-primary add-trip-btn"
+                data-title="9-18 September Cruise"
+                data-description="A fun month cruise."
+                data-price="600"
+                >Add Trip</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!--Scripts-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -145,6 +217,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script src="/Js/main.js"></script>
   </body>
 </html>
